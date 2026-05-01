@@ -1,0 +1,30 @@
+.survey-page { min-height: 100vh; display: flex; flex-direction: column; }
+
+.survey-header { position: relative; height: 140px; overflow: hidden; display: flex; align-items: center; }
+.survey-header css-doodle { position: absolute; inset: 0; z-index: 0; }
+.survey-header-content { position: relative; z-index: 1; padding: 0 2rem; width: 100%; }
+.survey-header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.survey-logo { font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 700; color: white; }
+.survey-header h1 { font-family: 'Space Grotesk', sans-serif; font-size: 1.8rem; font-weight: 700; color: white; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+.survey-header p { color: rgba(255,255,255,0.7); font-size: 0.88rem; }
+.btn-logout { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); border-radius: 8px; padding: 6px 14px; color: white; cursor: pointer; font-size: 0.85rem; transition: background 0.2s; }
+.btn-logout:hover { background: rgba(255,255,255,0.25); }
+
+.survey-progress-wrap { padding: 1rem 2rem 0.5rem; background: var(--bg); }
+.survey-progress-bar { height: 6px; background: rgba(255,255,255,0.08); border-radius: 3px; overflow: hidden; }
+.survey-progress-fill { height: 100%; border-radius: 3px; transition: width 0.5s ease; }
+.survey-progress-label { font-size: 0.78rem; color: var(--muted); margin-top: 4px; display: block; }
+
+.survey-questions { flex: 1; max-width: 720px; margin: 0 auto; width: 100%; padding: 1.5rem 1rem; display: flex; flex-direction: column; gap: 1rem; }
+
+.survey-q-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; position: relative; transition: border-color 0.2s; }
+.survey-q-card--answered { border-color: rgba(124,58,237,0.4); }
+.survey-q-number { position: absolute; top: -12px; left: 20px; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; color: white; }
+.survey-q-text { font-size: 0.98rem; font-weight: 600; color: var(--text); margin-bottom: 1.2rem; line-height: 1.5; padding-top: 6px; }
+
+.survey-nav { display: flex; justify-content: center; gap: 1rem; padding: 2rem; }
+.btn-nav { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 28px; color: var(--text); font-size: 0.95rem; font-weight: 600; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+.btn-nav:hover { border-color: var(--primary); }
+.btn-nav--next { background: linear-gradient(135deg, var(--primary), var(--secondary)); border-color: transparent; color: white; }
+.btn-nav--submit { background: linear-gradient(135deg, #10b981, #06b6d4); border-color: transparent; color: white; font-size: 1rem; }
+.btn-nav--submit:disabled { opacity: 0.6; cursor: not-allowed; }
